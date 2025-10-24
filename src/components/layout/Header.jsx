@@ -14,16 +14,16 @@ const Header = () => {
   ];
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className="shadow-md sticky bg-gray-800 top-0 z-50">
       <nav className="max-w-6xl mx-auto flex justify-between items-center p-4">
-        <h1 className="text-2xl font-bold text-blue-600">Abdullah Amin</h1>
+        <h1 className="text-xl font-bold">Abdullah Amin</h1>
         <ul className="flex gap-6">
           {navItems.map((item) => (
             <li key={item.path}>
               <Link
                 to={item.path}
-                className={`hover:text-blue-600 transition ${
-                  pathname === item.path ? "text-blue-500 font-semibold" : ""
+                className={`hover:text-primary-600 transition ${
+                  pathname === item.path ? "text-primary font-semibold" : ""
                 }`}
               >
                 {item.name}
